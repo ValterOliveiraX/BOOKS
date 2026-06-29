@@ -11,7 +11,7 @@ export default function Cadastro() {
         <div className="text-xs sm:text-sm text-gray-600 leading-relaxed">
           <p className="font-bold text-gray-900">INSTITUTO FEDERAL DE CIÊNCIA E TECNOLOGIA DO MARANHÃO</p>
           <p>PROF. DR. JOÃO CARLOS</p>
-          <p className="font-semibold text-emerald-700">LABORATÓRIO DE BANCO DE DADOS</p>
+          <p className="font-semibold text-emerald-700">DESENVOLVIMENTO WEB I</p>
           <p>Acadêmico: Valter Oliveira</p>
         </div>
       </div>

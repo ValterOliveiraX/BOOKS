@@ -35,7 +35,7 @@ export default function Dashboard() {
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           
           {/* Card 1: Saldo */}
-          <div className="bg-indigo-700 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-indigo-900 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wider">Saldo Atual</p>
@@ -67,7 +67,7 @@ export default function Dashboard() {
           </div>
 
           {/* Card 3: Contas a receber */}
-          <div className="bg-lime-700 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-lime-900 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas receber</p>
@@ -99,7 +99,7 @@ export default function Dashboard() {
           </div>
 
           {/* Card 5: Contas a pagar */}
-          <div className="bg-cyan-700 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-cyan-900 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas a pagar hoje</p>
@@ -131,7 +131,7 @@ export default function Dashboard() {
           </div>
 
           {/* Card 7: Contas a pagar */}
-          <div className="bg-amber-700 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-amber-900 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas a pagar hoje</p>
@@ -147,7 +147,7 @@ export default function Dashboard() {
           </div>
 
           {/* Card 8: Contas a pagar */}
-          <div className="bg-blue-700 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-blue-900 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas a pagar hoje</p>

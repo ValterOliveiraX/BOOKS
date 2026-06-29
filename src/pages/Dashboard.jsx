@@ -57,33 +57,33 @@ export default function Dashboard() {
                 <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas a pagar hoje</p>
                 <h2 className="text-2xl font-bold mt-1">1,234</h2>
               </div>
-              <div className="p-2 bg-blue-700/50 rounded-lg backdrop-blur-sm">
+              <div className="p-2 bg-emerald-700/50 rounded-lg backdrop-blur-sm">
                 <svg className="w-6 h-6 fill-white" viewBox="0 0 640 640"><path d="M297.4 41.4C309.9 28.9 330.2 28.9 342.7 41.4L470.7 169.4C479.9 178.6 482.6 192.3 477.6 204.3C472.6 216.3 460.9 224 448 224L384 224L384 560C384 586.5 362.5 608 336 608L304 608C277.5 608 256 586.5 256 560L256 224L192 224C179.1 224 167.4 216.2 162.4 204.2C157.4 192.2 160.2 178.5 169.4 169.4L297.4 41.4z"/></svg>
               </div>
             </div>
-            <div className="bg-blue-700 px-5 py-2.5 text-xs text-emerald-100 font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
+            <div className="bg-lime-400 px-5 py-2.5 text-xs text-emerald-100 font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
               Mais informações ►
             </div>
           </div>
 
           {/* Card 3: Contas a receber */}
-          <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-orange-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas receber</p>
                 <h2 className="text-2xl font-bold mt-1">1,234</h2>
               </div>
-              <div className="p-2 bg-blue-700/50 rounded-lg backdrop-blur-sm">
+              <div className="p-2 bg-pink-500 rounded-lg backdrop-blur-sm">
                 <svg className="w-6 h-6 fill-white" viewBox="0 0 640 640"><path d="M297.4 598.6C309.9 611.1 330.2 611.1 342.7 598.6L470.7 470.6C479.9 461.4 482.6 447.7 477.6 435.7C472.6 423.7 460.9 416 448 416L384 416L384 80C384 53.5 362.5 32 336 32L304 32C277.5 32 256 53.5 256 80L256 416L192 416C179.1 416 167.4 423.8 162.4 435.8C157.4 447.8 160.2 461.5 169.4 470.6L297.4 598.6z"/></svg>
               </div>
             </div>
-            <div className="bg-blue-700 px-5 py-2.5 text-xs text-emerald-100 font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
+            <div className="bg-purple-700 px-5 py-2.5 text-xs text-emerald-100 font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
               Mais informações ►
             </div>
           </div>
 
           {/* Card 4: Contas a pagar */}
-          <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-red-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas a pagar hoje</p>
@@ -115,7 +115,7 @@ export default function Dashboard() {
           </div>
 
           {/* Card 6: Contas a pagar */}
-          <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-cyan-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas a pagar hoje</p>
@@ -131,7 +131,7 @@ export default function Dashboard() {
           </div>
 
           {/* Card 7: Contas a pagar */}
-          <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
+          <div className="bg-lime-400 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
                 <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas a pagar hoje</p>

@@ -81,7 +81,7 @@ export default function Cadastro() {
                 name="titulo"
                 value={livro.titulo}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
                 placeholder="Ex: O Senhor dos Anéis"
               />
             </div>
@@ -94,7 +94,7 @@ export default function Cadastro() {
                 name="autor"
                 value={livro.autor}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
                 placeholder="Ex: J.R.R. Tolkien"
               />
             </div>
@@ -108,7 +108,7 @@ export default function Cadastro() {
                   name="isbn"
                   value={livro.isbn}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                  className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
                   placeholder="000-00-0000-000-0"
                 />
               </div>
@@ -118,7 +118,7 @@ export default function Cadastro() {
                   name="categoria"
                   value={livro.categoria}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                  className="w-full px-4 py-3 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
                 >
                   <option value="">Selecione...</option>
                   <option value="Ficção">Ficção Científica</option>
@@ -137,7 +137,7 @@ export default function Cadastro() {
                 value={livro.sinopse}
                 onChange={handleChange}
                 rows="3"
-                className="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white resize-none"
+                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white resize-none"
                 placeholder="Breve resumo sobre a história do livro..."
               />
             </div>
@@ -146,7 +146,7 @@ export default function Cadastro() {
             <div className="pt-4 flex space-x-3">
               <button
                 type="button"
-                className="w-1/3 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg font-medium transition"
+                className="w-1/3 px-4 py-2 bg-white hover:bg-slate-600 text-slate-300 rounded-lg font-medium transition"
                 onClick={() => setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' })}
               >
                 Limpar

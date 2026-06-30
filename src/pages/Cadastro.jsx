@@ -88,13 +88,13 @@ export default function Cadastro() {
 
             {/* Campo: Autor */}
             <div>
-              <label className="block text-sm font-medium mb-1 text-slate-300">Autor *</label>
+              <label className="block text-sm font-medium mb-1 text-slate-800">Autor *</label>
               <input
                 type="text"
                 name="autor"
                 value={livro.autor}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
                 placeholder="Ex: J.R.R. Tolkien"
               />
             </div>
@@ -102,23 +102,23 @@ export default function Cadastro() {
             {/* Dois campos na mesma linha (ISBN e Categoria) */}
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-slate-300">ISBN</label>
+                <label className="block text-sm font-medium mb-1 text-slate-800">ISBN</label>
                 <input
                   type="text"
                   name="isbn"
                   value={livro.isbn}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                  className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
                   placeholder="000-00-0000-000-0"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-slate-300">Categoria</label>
+                <label className="block text-sm font-medium mb-1 text-slate-800">Categoria</label>
                 <select
                   name="categoria"
                   value={livro.categoria}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                  className="w-full px-4 py-3 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
                 >
                   <option value="">Selecione...</option>
                   <option value="Ficção">Ficção Científica</option>
@@ -131,13 +131,13 @@ export default function Cadastro() {
 
             {/* Campo: Sinopse */}
             <div>
-              <label className="block text-sm font-medium mb-1 text-slate-300">Sinopse / Descrição</label>
+              <label className="block text-sm font-medium mb-1 text-slate-800">Sinopse / Descrição</label>
               <textarea
                 name="sinopse"
                 value={livro.sinopse}
                 onChange={handleChange}
                 rows="3"
-                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white resize-none"
+                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500 resize-none"
                 placeholder="Breve resumo sobre a história do livro..."
               />
             </div>
@@ -146,7 +146,7 @@ export default function Cadastro() {
             <div className="pt-4 flex space-x-3">
               <button
                 type="button"
-                className="w-1/3 px-4 py-2 bg-white hover:bg-slate-600 text-slate-300 rounded-lg font-medium transition"
+                className="w-1/3 px-4 py-2 bg-slate-300 hover:bg-slate-600 text-slate-300 rounded-lg font-medium transition"
                 onClick={() => setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' })}
               >
                 Limpar

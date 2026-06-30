@@ -75,13 +75,13 @@ export default function Cadastro() {
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* Campo: Título */}
             <div>
-              <label className="block text-sm font-medium mb-1 text-slate-300">Título do Livro *</label>
+              <label className="block text-sm font-medium mb-1 text-slate-800">Título do Livro *</label>
               <input
                 type="text"
                 name="titulo"
                 value={livro.titulo}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-white"
+                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
                 placeholder="Ex: O Senhor dos Anéis"
               />
             </div>

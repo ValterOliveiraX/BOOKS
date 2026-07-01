@@ -73,11 +73,11 @@ export default function Dashboard() {
                 <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas receber</p>
                 <h2 className="text-2xl font-bold mt-1">1,234</h2>
               </div>
-              <div className="p-2 bg-pink-500 rounded-lg backdrop-blur-sm">
+              <div className="p-2 bg-emerald-700/50 rounded-lg backdrop-blur-sm">
                 <svg className="w-6 h-6 fill-white" viewBox="0 0 640 640"><path d="M297.4 598.6C309.9 611.1 330.2 611.1 342.7 598.6L470.7 470.6C479.9 461.4 482.6 447.7 477.6 435.7C472.6 423.7 460.9 416 448 416L384 416L384 80C384 53.5 362.5 32 336 32L304 32C277.5 32 256 53.5 256 80L256 416L192 416C179.1 416 167.4 423.8 162.4 435.8C157.4 447.8 160.2 461.5 169.4 470.6L297.4 598.6z"/></svg>
               </div>
             </div>
-            <div className="bg-blue-700 px-5 py-2.5 text-xs text-emerald-100 font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
+            <div className="bg-blue-700 px-5 py-2.5 text-xs text-white font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
               Mais informações ►
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Dashboard() {
                 <svg className="w-6 h-6 fill-white" viewBox="0 0 640 640"><path d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z"/></svg>
               </div>
             </div>
-            <div className="bg-amber-800 px-5 py-2.5 text-xs text-white font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
+            <div className="bg-blue-700 px-5 py-2.5 text-xs text-white font-medium hover:bg-emerald-800 cursor-pointer transition-colors">
               Mais informações ►
             </div>
           </div>

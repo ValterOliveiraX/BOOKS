@@ -54,7 +54,7 @@ export default function Dashboard() {
           <div className="bg-violet-900 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
-                <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas a pagar hoje</p>
+                <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas a pagar</p>
                 <h2 className="text-2xl font-bold mt-1">1,234</h2>
               </div>
               <div className="p-2 bg-emerald-700/50 rounded-lg backdrop-blur-sm">
@@ -70,8 +70,8 @@ export default function Dashboard() {
           <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
-                <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas receber</p>
-                <h2 className="text-2xl font-bold mt-1">1,234</h2>
+                <p className="text-xs font-semibold text-white uppercase tracking-wider">Contas a receber</p>
+                <h2 className="text-2xl font-bold mt-1">1,900</h2>
               </div>
               <div className="p-2 bg-emerald-700/50 rounded-lg backdrop-blur-sm">
                 <svg className="w-6 h-6 fill-white" viewBox="0 0 640 640"><path d="M297.4 598.6C309.9 611.1 330.2 611.1 342.7 598.6L470.7 470.6C479.9 461.4 482.6 447.7 477.6 435.7C472.6 423.7 460.9 416 448 416L384 416L384 80C384 53.5 362.5 32 336 32L304 32C277.5 32 256 53.5 256 80L256 416L192 416C179.1 416 167.4 423.8 162.4 435.8C157.4 447.8 160.2 461.5 169.4 470.6L297.4 598.6z"/></svg>

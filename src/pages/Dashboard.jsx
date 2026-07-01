@@ -82,11 +82,11 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Card 4: Contas a pagar */}
+          {/* Card 4: Agendados para hoje: */}
           <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
-                <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas a pagar hoje</p>
+                <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Agendados para hoje</p>
                 <h2 className="text-2xl font-bold mt-1">1,234</h2>
               </div>
               <div className="p-2 bg-blue-700/50 rounded-lg backdrop-blur-sm">
@@ -98,11 +98,11 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Card 5: Contas a pagar */}
+          {/* Card 5: Reposição de produtos: */}
           <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
-                <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas a pagar hoje</p>
+                <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Orçamentos pendentes</p>
                 <h2 className="text-2xl font-bold mt-1">1,234</h2>
               </div>
               <div className="p-2 bg-blue-700/50 rounded-lg backdrop-blur-sm">
@@ -118,7 +118,7 @@ export default function Dashboard() {
           <div className="bg-blue-600 rounded-xl shadow-md flex flex-col justify-between overflow-hidden text-white transition-transform hover:scale-[1.02]">
             <div className="p-5 flex justify-between items-start">
               <div>
-                <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Contas a pagar hoje</p>
+                <p className="text-xs font-semibold text-blue-200 uppercase tracking-wider">Reposição de</p>
                 <h2 className="text-2xl font-bold mt-1">1,234</h2>
               </div>
               <div className="p-2 bg-blue-700/50 rounded-lg backdrop-blur-sm">

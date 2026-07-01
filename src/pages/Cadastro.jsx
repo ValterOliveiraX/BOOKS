@@ -162,6 +162,11 @@ export default function Cadastro() {
           </form>
         </section>
       </main>
+      <footer className="bg-slate-900/90 backdrop-blur-md text-slate-400 text-xs py-6 mt-auto border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p>Copyright © 2026 - Todos os direitos reservados.</p>
+        </div>
+      </footer>
     </div>
   );
 }

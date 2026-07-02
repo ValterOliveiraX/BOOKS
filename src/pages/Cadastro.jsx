@@ -12,6 +12,8 @@ export default function Cadastro() {
     sinopse: ''
   });
 
+  const [listaLivros, setListaLivros] = useState([]); // Estado para armazenar a lista de livros cadastrados
+
   // 2. Função que atualiza o estado toda vez que o usuário digita algo
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,6 +30,10 @@ export default function Cadastro() {
     // Validação simples
     if (!livro.titulo || !livro.autor) {
       alert("Por favor, preencha pelo menos o Título e o Autor!");
+      //adicionando o livro à lista existente
+      setListaLivros((listaAnterior) => [...listaAnterior, livro]);
+      //limpando o formulário após adicionar à lista
+      setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' }); 
       return;
     }
 
@@ -147,19 +153,33 @@ export default function Cadastro() {
               <button
                 type="button"
                 className="w-1/3 px-4 py-2 bg-slate-300 hover:bg-slate-600 text-slate-300 rounded-lg font-medium transition"
-                onClick={() => setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' })}
-              >
+                onClick={() => setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' })}>
                 Limpar
               </button>
-              <button
-                type="submit"
-                className="w-2/3 px-4 py-2 bg-fuchsia-700 hover:bg-fuchsia-600 text-white rounded-lg font-medium shadow-lg transition"
-              >
+              <button type="submit" className="w-2/3 px-4 py-2 bg-fuchsia-700 hover:bg-fuchsia-600 text-white rounded-lg font-medium shadow-lg transition">
                 Salvar Livro
               </button>
             </div>
 
           </form>
+              <div className="w-full max-w-lg">
+                <h3 className="text-xl font-semibold mb-4 text-slate-300">Livros Cadastrados ({listaLivros.length})</h3>
+                <div className="space-y-3">
+                  {listaLivros.length === 0 ? (
+                    <p className="text-slate-500 text-center italic">Nenhum livro cadastrado ainda.</p>
+                  ) : (
+                    listaLivros.map((item, index) => (
+                      <div key={index} className="bg-slate-800 p-4 rounded-lg border-l-4 border-fuchsia-500 flex justify-between items-center">
+                        <div>
+                          <h4 className="font-bold">{item.titulo}</h4>
+                          <p className="text-sm text-slate-400">{item.autor}</p>
+                        </div>
+                        <span className="text-xs bg-slate-700 px-2 py-1 rounded">{item.categoria || "Geral"}</span>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
         </section>
       </main>
       <footer className="bg-slate-900/90 backdrop-blur-md text-slate-400 text-xs py-6 mt-auto border-t border-slate-800">

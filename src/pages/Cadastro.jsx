@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
-
 export default function Cadastro() {
-    // 1. Criando os estados para armazenar os dados do formulário
+  // 1. Criando os estados para armazenar os dados do formulário
   const [livro, setLivro] = useState({
     titulo: '',
     autor: '',
@@ -27,21 +26,19 @@ export default function Cadastro() {
   const handleSubmit = (e) => {
     e.preventDefault(); // Impede o recarregamento da página
 
-    // Validação simples
+    // Validação: Se não preencher, para o código aqui!
     if (!livro.titulo || !livro.autor) {
       alert("Por favor, preencha pelo menos o Título e o Autor!");
-      //adicionando o livro à lista existente
-      setListaLivros((listaAnterior) => [...listaAnterior, livro]);
-      //limpando o formulário após adicionar à lista
-      setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' }); 
-      return;
+      return; 
     }
 
-    // Aqui futuramente você conectará ao seu banco de dados (SQL)
+    // 🟢 SUCESSO: O formulário está correto, agora sim salvamos na lista!
+    setListaLivros((listaAnterior) => [...listaAnterior, livro]);
+
     console.log("Dados do livro prontos para salvar:", livro);
     alert(`Livro "${livro.titulo}" cadastrado com sucesso!`);
 
-    // Limpa o formulário após salvar
+    // Limpa o formulário após salvar com sucesso
     setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' });
   };
 
@@ -77,8 +74,9 @@ export default function Cadastro() {
       {/* Conteúdo Form e Tabela */}
       <main className="flex-grow max-w-7xl w-full mx-auto p-4 sm:p-6 space-y-8">
         <section className="bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-100">
-          <h3 class="text-lg font-bold text-white mb-6 border-b pb-3 border-gray-200">📝 Novo Cadastro</h3>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <h3 className="text-lg font-bold text-slate-800 mb-6 border-b pb-3 border-gray-200">📝 Novo Cadastro</h3>
+          
+          <form onSubmit={handleSubmit} className="space-y-4 mb-8">
             {/* Campo: Título */}
             <div>
               <label className="block text-sm font-medium mb-1 text-slate-800">Título do Livro *</label>
@@ -87,7 +85,7 @@ export default function Cadastro() {
                 name="titulo"
                 value={livro.titulo}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
+                className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg focus:outline-none focus:border-fuchsia-500 text-gray-700"
                 placeholder="Ex: O Senhor dos Anéis"
               />
             </div>
@@ -100,7 +98,7 @@ export default function Cadastro() {
                 name="autor"
                 value={livro.autor}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
+                className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg focus:outline-none focus:border-fuchsia-500 text-gray-700"
                 placeholder="Ex: J.R.R. Tolkien"
               />
             </div>
@@ -114,7 +112,7 @@ export default function Cadastro() {
                   name="isbn"
                   value={livro.isbn}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
+                  className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg focus:outline-none focus:border-fuchsia-500 text-gray-700"
                   placeholder="000-00-0000-000-0"
                 />
               </div>
@@ -124,7 +122,7 @@ export default function Cadastro() {
                   name="categoria"
                   value={livro.categoria}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500"
+                  className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg focus:outline-none focus:border-fuchsia-500 text-gray-700"
                 >
                   <option value="">Selecione...</option>
                   <option value="Ficção">Ficção Científica</option>
@@ -143,7 +141,7 @@ export default function Cadastro() {
                 value={livro.sinopse}
                 onChange={handleChange}
                 rows="3"
-                className="w-full px-4 py-2 bg-white border border-slate-600 rounded-lg focus:outline-none focus:border-fuchsia-500 text-slate-500 resize-none"
+                className="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg focus:outline-none focus:border-fuchsia-500 text-gray-700 resize-none"
                 placeholder="Breve resumo sobre a história do livro..."
               />
             </div>
@@ -152,36 +150,43 @@ export default function Cadastro() {
             <div className="pt-4 flex space-x-3">
               <button
                 type="button"
-                className="w-1/3 px-4 py-2 bg-slate-300 hover:bg-slate-600 text-slate-300 rounded-lg font-medium transition"
-                onClick={() => setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' })}>
+                className="w-1/3 px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-lg font-medium transition"
+                onClick={() => setLivro({ titulo: '', autor: '', isbn: '', categoria: '', sinopse: '' })}
+              >
                 Limpar
               </button>
               <button type="submit" className="w-2/3 px-4 py-2 bg-fuchsia-700 hover:bg-fuchsia-600 text-white rounded-lg font-medium shadow-lg transition">
                 Salvar Livro
               </button>
             </div>
-
           </form>
-              <div className="w-full max-w-lg">
-                <h3 className="text-xl font-semibold mb-4 text-slate-300">Livros Cadastrados ({listaLivros.length})</h3>
-                <div className="space-y-3">
-                  {listaLivros.length === 0 ? (
-                    <p className="text-red-400text-center italic">Nenhum livro cadastrado ainda.</p>
-                  ) : (
-                    listaLivros.map((item, index) => (
-                      <div key={index} className="bg-white p-4 rounded-lg border-l-4 border-fuchsia-500 flex justify-between items-center">
-                        <div>
-                          <h4 className="font-bold">{item.titulo}</h4>
-                          <p className="text-sm text-gray-950">{item.autor}</p>
-                        </div>
-                        <span className="text-xs bg-white px-2 py-1 rounded">{item.categoria || "Geral"}</span>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </div>
+
+          {/* Seção da Lista de Livros Atualizada */}
+          <div className="border-t pt-6 border-gray-200">
+            <h3 className="text-lg font-bold text-slate-800 mb-4">📚 Livros Cadastrados ({listaLivros.length})</h3>
+            <div className="space-y-3">
+              {listaLivros.length === 0 ? (
+                <p className="text-gray-400 text-center italic py-4">Nenhum livro cadastrado ainda.</p>
+              ) : (
+                listaLivros.map((item, index) => (
+                  <div key={index} className="bg-slate-50 p-4 rounded-lg border-l-4 border-fuchsia-500 flex justify-between items-center shadow-sm border border-gray-100">
+                    <div>
+                      <h4 className="font-bold text-slate-900">{item.titulo}</h4>
+                      <p className="text-sm text-gray-600">Autor: {item.autor}</p>
+                      {item.isbn && <p className="text-xs text-gray-400 mt-1">ISBN: {item.isbn}</p>}
+                    </div>
+                    <span className="text-xs bg-fuchsia-100 text-fuchsia-800 px-2 py-1 rounded font-medium">
+                      {item.categoria || "Geral"}
+                    </span>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+
         </section>
       </main>
+
       <footer className="bg-slate-900/90 backdrop-blur-md text-slate-400 text-xs py-6 mt-auto border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p>Copyright © 2026 - Todos os direitos reservados.</p>
@@ -190,5 +195,3 @@ export default function Cadastro() {
     </div>
   );
 }
-
-

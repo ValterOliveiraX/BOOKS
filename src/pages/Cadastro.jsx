@@ -77,7 +77,7 @@ export default function Cadastro() {
       {/* Conteúdo Form e Tabela */}
       <main className="flex-grow max-w-7xl w-full mx-auto p-4 sm:p-6 space-y-8">
         <section className="bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-100">
-          <h3 class="text-lg font-bold text-gray-800 mb-6 border-b pb-3 border-gray-200">📝 Novo Cadastro</h3>
+          <h3 class="text-lg font-bold text-white mb-6 border-b pb-3 border-gray-200">📝 Novo Cadastro</h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* Campo: Título */}
             <div>
@@ -166,15 +166,15 @@ export default function Cadastro() {
                 <h3 className="text-xl font-semibold mb-4 text-slate-300">Livros Cadastrados ({listaLivros.length})</h3>
                 <div className="space-y-3">
                   {listaLivros.length === 0 ? (
-                    <p className="text-slate-500 text-center italic">Nenhum livro cadastrado ainda.</p>
+                    <p className="text-red-400text-center italic">Nenhum livro cadastrado ainda.</p>
                   ) : (
                     listaLivros.map((item, index) => (
-                      <div key={index} className="bg-slate-800 p-4 rounded-lg border-l-4 border-fuchsia-500 flex justify-between items-center">
+                      <div key={index} className="bg-white p-4 rounded-lg border-l-4 border-fuchsia-500 flex justify-between items-center">
                         <div>
                           <h4 className="font-bold">{item.titulo}</h4>
-                          <p className="text-sm text-slate-400">{item.autor}</p>
+                          <p className="text-sm text-gray-950">{item.autor}</p>
                         </div>
-                        <span className="text-xs bg-slate-700 px-2 py-1 rounded">{item.categoria || "Geral"}</span>
+                        <span className="text-xs bg-white px-2 py-1 rounded">{item.categoria || "Geral"}</span>
                       </div>
                     ))
                   )}
